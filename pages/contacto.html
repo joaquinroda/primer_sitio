@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header class="headerind">
+
+        <nav class="navmenu">
+            <ul class="ulpadre">
+                <li class="limenu">
+                    <a class="letra_menu" href="../index.html">Inicio</a>
+                </li>
+
+                <li class="limenu">
+                    <a class="letra_menu" href="categorias.html">Categorias</a>
+                </li>
+
+                <li class="limenu">
+                    <a class="letra_menu" href="masvendidos.html">Más vendidos</a>
+                </li>
+
+                <li class="limenu">
+                    <a class="letra_menu" href="mejorvalor.html">Mejor Valorados</a>
+                </li>
+
+                <li class="limenu">
+                    <a class="letra_menu" href="ofertas.html">Ofertas</a>
+                </li>
+
+                <li class="limenu">
+                    <a class="letra_menu" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    
+    <h1>Contacto</h1>
+    <img class="logocontacto" src="../img/logocontacto.png" alt="Logo Contacto">
+
+    <form id="formulario" class="form1">¿Tienes algúna opinión, queja, reclamo o recomendación? ¡Contáctanos!
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required placeholder="Ingresa tu nombre">
+        
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="e-mail" required placeholder="Ingresa tu E-Mail">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" required placeholder="Ingresa tu número de teléfono">
+
+        </fieldset>
+
+        <fieldset>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
+        </fieldset>
+
+            <div>
+                <h3>Elige las opciones que más prefieras</h3>
+
+                <p><b>¿Estás conforme con nuestro servicio?</b></p>
+
+                <label for="si">Si</label>
+                <input type="radio" name="cereal" id="si">
+
+                <label for="no">No</label>
+                <input type="radio" name="cereal" id="no">
+
+                <label for="talvez">Tal vez</label>
+                <input type="checkbox" name="cereal" id="talvez">
+            </div>
+        
+        <fieldset class="containerEncuesta">
+
+            <legend>¿Qué es lo que más buscas en el sitio?</legend>
+            <select name="" id="">
+                <option value="" disabled>Seleccione una opción</option>
+                <option value="">Ropa</option>
+                <option value="">Electrodomesticos</option>
+                <option value="">Comida</option>
+                <option value="">Teléfonos</option>
+            </select>
+            
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Enviar"> <br>
+            <input type="reset" value="Borrar Todo">
+        </fieldset>
+    </form>
+
+    <footer class="footer">
+        <p>Todos los derechos registrados</p>
+        <a href="contacto.html">Contacto</a>
+        <a href="ayuda.html">Ayuda</a>
+    </footer>
+
+</body>
+</html>

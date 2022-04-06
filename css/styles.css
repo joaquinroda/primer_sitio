@@ -1,0 +1,555 @@
+
+/* CSS Generales */
+.textcenter {
+    text-align: center;
+}
+
+.body {
+    background: linear-gradient(grey, rgb(83, 81, 81), rgb(46, 44, 44));
+}
+
+.search__icon {
+    margin-left: 1700px;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.carrito__icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.usuario__icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.nodotlist {
+    list-style: none;
+}
+
+.buttonbord {
+    border-radius: 10px;
+    margin-left: 290px;
+}
+
+.subtitle {
+    background-color: aqua;
+    text-align: center;
+    border: 4px double red;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Termino CSS Generales */
+
+/* Comienzo CSS Index */
+
+.bodyin {
+    background: linear-gradient(grey, rgb(83, 81, 81), rgb(46, 44, 44));
+}
+
+@media screen and (min-width: 1281px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .galeriacat {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .galeriaoffer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .div__offer {
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .galeriacat {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .galeriaoffer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    }
+
+    .div__offer {
+        justify-self: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeriacat {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: red;
+    }
+
+    .galeriaoffer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .navmenu li:last-child {
+        display:none
+    }
+
+    .limenu_button {
+        background-color: rgb(67, 161, 67);
+        border: 2px solid goldenrod;
+        padding: 10px;
+        border-radius: 10px;
+        }
+
+    .div__readidas {
+            justify-self: center;
+        }
+    
+    .div__repuma {
+            justify-self: center;
+        }
+
+    .div__cat {
+        margin: 20px;
+    }
+
+    .div__offer {
+        justify-self: center;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: red;  
+    }
+
+    .galeriacat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: red;
+    }
+
+    .galeriaoffer {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: red;  
+    }
+
+    .navmenu li:last-child {
+        display:none
+    }
+
+    .limenu_button {
+        background-color: rgb(67, 161, 67);
+        border: 2px solid goldenrod;
+        padding: 10px;
+        border-radius: 10px;
+        }
+
+    .ulpadre {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+        }
+
+    .div__readidas {
+        justify-self: center;
+    }
+
+    .div__repuma {
+        justify-self: center;
+    }
+
+    .div__valoracion {
+        justify-self: center;
+    }
+
+    .div__cat {
+        align-items: center;
+    }
+
+    .div__offer {
+        justify-self: center;
+    }
+
+    .letra_menu {
+        color: aqua;
+        font-family: Roboto;
+        text-decoration: none;
+        font-size: 15px;
+    }
+}
+
+
+.grid-header {
+    grid-area: header;
+}
+
+/* .grid-aside {
+    grid-area: aside;
+} */
+
+.grid-main {
+    grid-area: main;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
+/* aside {
+    font-size: 25px;
+    width: 150px;
+    background-color: white;
+} */
+
+.navmenu {
+    list-style: none;
+    text-align: center;
+}
+
+.container__logo {
+    display: flex;
+}
+
+.logo {
+    width: 60px;
+
+}
+
+.letra_menu {
+    color: aqua;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.letra_menu:hover{
+    color:lightgreen
+}
+
+.limenu:last-child {
+    background-color: rgb(67, 161, 67);
+    border: 3px solid aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.limenu:last-child:hover{
+    background: transparent;
+    border: 3px solid aqua;
+}
+
+.sidebar__index {
+    font-size: 15px;
+}
+
+.ulpadre {
+    display: flex;
+    list-style: none;
+}
+
+.limenu {
+    font-size: 20px;
+    justify-content: space-between;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.header {
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+    border: solid 2px red;
+}
+
+.headerind {
+    background-color: #222;
+    border: 2px solid #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.letraga {
+    font-family: Hurricane;
+    font-size: 40px;
+    color: blue;
+    font-weight: bold;
+}
+
+.div__repuma {
+    background-color: black;
+    height: 700px;
+    width: 400px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    border: double 4px red;
+}
+
+.nombreprod {
+    color: brown;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: aqua;
+}
+
+.imgpuma {
+    width: 300px;
+    margin: 10px 50px 50px 50px;
+    border: solid 2px red;
+}
+
+.div__readidas {
+    background-color: black;
+    height: 700px;
+    width: 400px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    border: double 4px red;
+}
+
+.imgadidas {
+    width: 300px;
+    margin: 10px 50px 50px 50px;
+    border: solid 2px red;
+}
+
+.precio {
+    color: yellow;
+    font-weight: bolder;
+}
+
+.descprod {
+    background-color: darkorange;
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+/* Termino CSS Index */
+
+
+/* Comienzo css de Categorias */
+
+.div__cat {
+    background-color: black;
+    height: 500px;
+    width: 400px;
+    border: double 4px red;
+    justify-self: center;
+}
+
+/* Termina css de Categorias */
+
+/* Comienzo css de Más Vendidos */
+
+.vendidos {
+    background-color: grey;
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.imglava {
+    width: 300px;
+    height: 300px;
+    margin: 10px 50px 50px 50px;
+    border: solid 2px red;
+}
+
+.galeriamv {
+    background-color: gray;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.div__readidas__mv {
+    background-color: black;
+    height: 700px;
+    width: 400px;
+    border: double 4px red;
+    margin: 5px 10px 5px 10px;
+}
+
+.div__repuma__mv {
+    background-color: black;
+    height: 700px;
+    width: 400px;
+    border: double 4px red;
+    margin: 5px 10px 5px 10px;
+}
+
+/* Termino CSS de Más Vendidos */
+
+/* Comienzo css de Ofertas */
+
+.galeriaoffer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    grid-gap: 30px;
+    margin-top: -15px;
+}
+
+.descuento {
+    background-color: green;
+    color: aqua;
+    position: absolute;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.div__offer {
+    background-color: black;
+    height: 700px;
+    width: 400px;
+    border: double 4px red;
+    position: relative;
+}
+
+/* Termino css de Ofertas */
+
+/* Comienzo css de Mejor Valorados */
+
+.valorado {
+    background-color: darkgoldenrod;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: solid 1px red;
+}
+
+.div__valoracion {
+    background-color: black;
+    height: 900px;
+    width: 400px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    border: double 4px red;
+    position: relative;
+}
+
+/* Termina css de Mejor Valorados */
+
+/* Comienzo css de CONTACTO */
+
+.form1 {
+    background-color: brown;
+    font-size: 25px;
+}
+
+.logocontacto {
+    width: 100px;
+}
+
+/* Termino CSS de CONTACTO */
+
+/* Comienzo css de AYUDA */
+
+.ayudalogo {
+    width: 100px;
+    margin-left: 47%;
+}
+
+.section__ayuda {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Termino css de AYUDA */
+
+/* Comienzo Footer */
+
+.footer {
+    font-family: Roboto;
+    font-size: 20px;
+    background-color: aqua;
+    border: 3px solid darkcyan;
+    margin-top: 15px;
+    grid-area: footer;
+}
+
+/* Termino Footer */
