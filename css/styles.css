@@ -61,16 +61,20 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
-        grid-template-areas: 
+        grid-template-areas:
         "header header header"
         "main main main"
         "main main main"
         "footer footer footer";
     }
 
+    .div__repuma {
+        justify-self: center;
+    }
+
     .galeriacat {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-gap: 30px;
         grid-template-areas: 
         "header header header"
@@ -91,6 +95,10 @@
     }
 
     .div__offer {
+        justify-self: center;
+    }
+
+    .div__valoracion {
         justify-self: center;
     }
 }
@@ -165,10 +173,6 @@
         padding: 10px;
         border-radius: 10px;
         }
-
-    .div__readidas {
-            justify-self: center;
-        }
     
     .div__repuma {
             justify-self: center;
@@ -224,10 +228,6 @@
             flex-direction: column;
             list-style: none;
         }
-
-    .div__readidas {
-        justify-self: center;
-    }
 
     .div__repuma {
         justify-self: center;
@@ -357,8 +357,12 @@
     height: 700px;
     width: 400px;
     margin-bottom: 40px;
-    margin-left: 30px;
+    margin-left: 40px;
     border: double 4px red;
+}
+
+.div__repuma:hover {
+    transform: scale(1.2,1.2);
 }
 
 .nombreprod {
@@ -374,15 +378,6 @@
     width: 300px;
     margin: 10px 50px 50px 50px;
     border: solid 2px red;
-}
-
-.div__readidas {
-    background-color: black;
-    height: 700px;
-    width: 400px;
-    margin-left: 30px;
-    margin-bottom: 40px;
-    border: double 4px red;
 }
 
 .imgadidas {
@@ -416,6 +411,10 @@
     justify-self: center;
 }
 
+.div__cat:hover {
+    transform: scale(1.2, 1.2);
+}
+
 /* Termina css de Categorias */
 
 /* Comienzo css de Más Vendidos */
@@ -439,22 +438,6 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-}
-
-.div__readidas__mv {
-    background-color: black;
-    height: 700px;
-    width: 400px;
-    border: double 4px red;
-    margin: 5px 10px 5px 10px;
-}
-
-.div__repuma__mv {
-    background-color: black;
-    height: 700px;
-    width: 400px;
-    border: double 4px red;
-    margin: 5px 10px 5px 10px;
 }
 
 /* Termino CSS de Más Vendidos */
@@ -486,6 +469,10 @@
     position: relative;
 }
 
+.div__offer:hover {
+    transform: scale(1.2, 1.2);
+}
+
 /* Termino css de Ofertas */
 
 /* Comienzo css de Mejor Valorados */
@@ -502,12 +489,11 @@
     background-color: black;
     height: 900px;
     width: 400px;
-    margin-bottom: 70px;
-    margin-top: 50px;
-    margin-left: 30px;
-    margin-right: 50px;
     border: double 4px red;
-    position: relative;
+}
+
+.div__valoracion:hover {
+    transform: scale(1.2, 1.2);
 }
 
 /* Termina css de Mejor Valorados */
