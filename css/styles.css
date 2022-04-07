@@ -8,25 +8,6 @@
     background: linear-gradient(grey, rgb(83, 81, 81), rgb(46, 44, 44));
 }
 
-.search__icon {
-    margin-left: 1700px;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-}
-
-.carrito__icon {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-}
-
-.usuario__icon {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-}
-
 .text_right {
     text-align: right;
 }
@@ -46,9 +27,66 @@
     border: 4px double red;
     border-radius: 10px;
     width: 100%;
+    margin-top: 100px;
 }
 
 /* Termino CSS Generales */
+
+/* Comienzo CSS Menú */
+
+.letra_menu {
+    color: aqua;
+    font-family: Roboto;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.letra_menu:hover{
+    color:lightgreen
+}
+
+.limenu:last-child {
+    background-color: rgb(67, 161, 67);
+    border: 3px solid aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.limenu:last-child:hover{
+    background: transparent;
+    border: 3px solid aqua;
+}
+
+.navmenu {
+    list-style: none;
+    text-align: center;
+    position: fixed;
+    z-index: 5000;
+    box-shadow: 0px 4px 3px black;
+    width: 100%;
+    background-color: rgb(197, 141, 96);
+    border: 1px solid black;
+    top: 0;
+}
+
+.ulpadre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.limenu {
+    font-size: 20px;
+    justify-content: space-between;
+    margin-left: 30px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+
+/* Termino CSS Menú */
 
 /* Comienzo CSS Index */
 
@@ -74,7 +112,7 @@
 
     .galeriacat {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
         grid-template-areas: 
         "header header header"
@@ -154,6 +192,7 @@
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
         background-color: red;
     }
 
@@ -276,11 +315,6 @@
     background-color: white;
 } */
 
-.navmenu {
-    list-style: none;
-    text-align: center;
-}
-
 .container__logo {
     display: flex;
 }
@@ -290,43 +324,8 @@
 
 }
 
-.letra_menu {
-    color: aqua;
-    font-family: Roboto;
-    text-decoration: none;
-    font-size: 25px;
-}
-
-.letra_menu:hover{
-    color:lightgreen
-}
-
-.limenu:last-child {
-    background-color: rgb(67, 161, 67);
-    border: 3px solid aqua;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.limenu:last-child:hover{
-    background: transparent;
-    border: 3px solid aqua;
-}
-
 .sidebar__index {
     font-size: 15px;
-}
-
-.ulpadre {
-    display: flex;
-    list-style: none;
-}
-
-.limenu {
-    font-size: 20px;
-    justify-content: space-between;
-    margin-left: 30px;
-    padding: 10px;
 }
 
 .header {
