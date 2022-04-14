@@ -18,73 +18,58 @@
 
 .buttonbord {
     border-radius: 10px;
-    margin-left: 290px;
+    margin-left: 260px;
+    width: 100px;
 }
 
 .subtitle {
     background-color: aqua;
     text-align: center;
-    border: 4px double red;
+    border: 4px solid lightgrey;
     border-radius: 10px;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 20px;
 }
 
 /* Termino CSS Generales */
 
 /* Comienzo CSS Menú */
 
-.letra_menu {
-    color: aqua;
-    font-family: Roboto;
-    text-decoration: none;
-    font-size: 25px;
+.logo {
+    height: 70px;
+    width: 100px;
 }
 
-.letra_menu:hover{
-    color:lightgreen
+.navbar {
+    position: fixed;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    z-index: 1000;
+    border: solid 2px black;
 }
 
-.limenu:last-child {
+.navbar-collapse {
+    justify-content: center;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    margin-right: 9px;
+}
+
+.nav-contacto {
     background-color: rgb(67, 161, 67);
     border: 3px solid aqua;
-    padding: 10px;
     border-radius: 5px;
-}
-
-.limenu:last-child:hover{
-    background: transparent;
-    border: 3px solid aqua;
-}
-
-.navmenu {
-    list-style: none;
-    text-align: center;
-    position: fixed;
-    z-index: 5000;
-    box-shadow: 0px 4px 3px black;
-    width: 100%;
-    background-color: rgb(197, 141, 96);
-    border: 1px solid black;
-    top: 0;
-}
-
-.ulpadre {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
 }
 
-.limenu {
-    font-size: 20px;
-    justify-content: space-between;
-    margin-left: 30px;
-    padding: 10px;
-    font-weight: bold;
-    font-family: Roboto;
+.nav-contacto:hover {
+    background: aqua;
+    border: 3px solid green;
 }
-
 
 /* Termino CSS Menú */
 
@@ -92,6 +77,11 @@
 
 .bodyin {
     background: linear-gradient(grey, rgb(83, 81, 81), rgb(46, 44, 44));
+}
+
+#carouselExampleDark {
+    margin-top: 100px;
+    margin-bottom: -50px;
 }
 
 @media screen and (min-width: 1281px) {
@@ -108,17 +98,6 @@
 
     .div__repuma {
         justify-self: center;
-    }
-
-    .galeriacat {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 30px;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "main main main"
-        "footer footer footer";
     }
 
     .galeriaoffer {
@@ -153,17 +132,6 @@
         "footer footer footer";
     }
 
-    .galeriacat {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "main main main"
-        "footer footer footer";
-    }
-
     .galeriaoffer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -187,40 +155,15 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .galeriacat {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: red;
-    }
-
     .galeriaoffer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-
-    .navmenu li:last-child {
-        display:none
-    }
-
-    .limenu_button {
-        background-color: rgb(67, 161, 67);
-        border: 2px solid goldenrod;
-        padding: 10px;
-        border-radius: 10px;
-        }
     
     .div__repuma {
             justify-self: center;
         }
-
-    .div__cat {
-        margin: 20px;
-    }
-
+        
     .div__offer {
         justify-self: center;
     }
@@ -238,35 +181,11 @@
         background-color: red;  
     }
 
-    .galeriacat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: red;
-    }
-
     .galeriaoffer {
         display: grid;
         grid-template-columns: 1fr;
         background-color: red;  
     }
-
-    .navmenu li:last-child {
-        display:none
-    }
-
-    .limenu_button {
-        background-color: rgb(67, 161, 67);
-        border: 2px solid goldenrod;
-        padding: 10px;
-        border-radius: 10px;
-        }
-
-    .ulpadre {
-            display: flex;
-            flex-direction: column;
-            list-style: none;
-        }
 
     .div__repuma {
         justify-self: center;
@@ -276,30 +195,17 @@
         justify-self: center;
     }
 
-    .div__cat {
-        align-items: center;
-    }
 
     .div__offer {
         justify-self: center;
     }
 
-    .letra_menu {
-        color: aqua;
-        font-family: Roboto;
-        text-decoration: none;
-        font-size: 15px;
-    }
 }
 
 
 .grid-header {
     grid-area: header;
 }
-
-/* .grid-aside {
-    grid-area: aside;
-} */
 
 .grid-main {
     grid-area: main;
@@ -309,11 +215,6 @@
     grid-area: footer;
 }
 
-/* aside {
-    font-size: 25px;
-    width: 150px;
-    background-color: white;
-} */
 
 .container__logo {
     display: flex;
@@ -357,7 +258,7 @@
     width: 400px;
     margin-bottom: 40px;
     margin-left: 40px;
-    border: double 4px red;
+    border: solid 4px lightgrey;
 }
 
 .div__repuma:hover {
@@ -398,23 +299,6 @@
 }
 
 /* Termino CSS Index */
-
-
-/* Comienzo css de Categorias */
-
-.div__cat {
-    background-color: black;
-    height: 500px;
-    width: 400px;
-    border: double 4px red;
-    justify-self: center;
-}
-
-.div__cat:hover {
-    transform: scale(1.2, 1.2);
-}
-
-/* Termina css de Categorias */
 
 /* Comienzo css de Más Vendidos */
 
@@ -506,6 +390,7 @@
 
 .logocontacto {
     width: 100px;
+    margin-top: 40px;
 }
 
 /* Termino CSS de CONTACTO */
@@ -515,6 +400,7 @@
 .ayudalogo {
     width: 100px;
     margin-left: 47%;
+    margin-top: 100px;
 }
 
 .section__ayuda {
