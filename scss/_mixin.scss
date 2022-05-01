@@ -1,0 +1,21 @@
+/* Empiezo scss mixin */
+
+//mixin
+
+@mixin flexiblemobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin parrafo($family,$size,$alineacion,$color) {
+    font-family: $family;
+    font-size: $size;
+    text-align: $alineacion;
+    color: $color;
+}
+
+/* Termino scss mixin */
+
+

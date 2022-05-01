@@ -1,0 +1,20 @@
+/* Empiezo scss maps */
+
+//maps 
+
+$pixels: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    x1: 1200px,
+    xx1: 1400px
+);
+
+
+@mixin mq($breakpoint) {
+    @media screen and (min-width: map-get($pixels, $breakpoint)) {
+        @content;
+    }
+}
+
+/* Termino scss maps */

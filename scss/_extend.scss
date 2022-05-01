@@ -1,0 +1,13 @@
+//Extends
+.estilop {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10em;
+}
+
+.estilop2 {
+    @extend .estilop;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 10px;
+}
