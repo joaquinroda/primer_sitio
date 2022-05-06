@@ -73,31 +73,35 @@
     </nav>
 </header>
     
-    <div class="div__contacto subtitle">
+    <div class="div__contacto">
         <h1>Contacto</h1>
         <img class="logocontacto" src="../img/logocontacto.png" alt="Logo Contacto">
     </div>
 
-    <form id="formulario" class="form1">¿Tienes algúna opinión, queja, reclamo o recomendación? ¡Contáctanos!
+    <form id="formulario" class="form1"><strong>¿Tienes algúna opinión, queja, reclamo o recomendación? ¡Contáctanos!</strong>
         <fieldset>
             <legend>Información Personal</legend>
-            <label for="nombre">Nombre</label>
+            <strong><label for="nombre">Nombre</label></strong>
             <input type="text" id="nombre" required placeholder="Ingresa tu nombre">
-        
-            <label for="e-mail">E-mail</label>
+        </fieldset>
+        <fieldset>
+            <strong><label for="e-mail">E-mail</label></strong>
             <input type="email" id="e-mail" required placeholder="Ingresa tu E-Mail">
-
-            <label for="telefono">Teléfono</label>
+        </fieldset>
+        <fieldset>
+            <strong><label for="telefono">Teléfono</label></strong>
             <input type="tel" id="telefono" required placeholder="Ingresa tu número de teléfono">
-
         </fieldset>
 
         <fieldset>
-            <textarea name="" id="" cols="30" rows="10" required></textarea>
+            <textarea name="" id="" cols="30" rows="10" required placeholder="Deja tu opinión aquí"></textarea>
         </fieldset>
 
-            <div>
-                <h3>Elige las opciones que más prefieras</h3>
+        <hr>
+
+        <h3>Elige las opciones que más prefieras</h3>
+
+            <div class="opciones">
 
                 <p><b>¿Estás conforme con nuestro servicio?</b></p>
 
@@ -113,6 +117,8 @@
         
         <fieldset class="containerEncuesta">
 
+            <hr>
+
             <legend>¿Qué es lo que más buscas en el sitio?</legend>
             <select name="" id="">
                 <option value="" disabled>Seleccione una opción</option>
@@ -125,8 +131,8 @@
         </fieldset>
 
         <fieldset>
-            <input type="submit" value="Enviar"> <br>
-            <input type="reset" value="Borrar Todo">
+            <input type="submit" value="Enviar" class="boton__contacto"> <br>
+            <input type="reset" value="Borrar Todo" class="boton__contacto">
         </fieldset>
     </form>
 
@@ -135,20 +141,20 @@
             <div class="div__footer__nosotros">
                 <h1>Sobre Nosotros</h1>
                 <div class="nosotros">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <a href="./pages/ayuda.html" class="fa-solid fa-circle-question">Ayuda</a>
+                    <p>Somos una tiendita familiar ubicada en El pais de las maravillas</p>
+                    <p>decidimos formar esta tienda con todo tipo de productos</p>
+                    <p>ya sea para el hogar, tecnológicos o alimentos</p>
+                    <p>con el objetivo de brindarles la mejor calidad al mejor precio!</p>
+                    <a href=".ayuda.html" class="fa-solid fa-circle-question">Ayuda</a>
                 </div>
             </div>
 
             <div class="div__footer__redes">
                 <h2>Redes Sociales</h2>
-                <a href="#" class="fa-brands fa-facebook-square"></a>
-                <a href="#" class="fa-brands fa-twitter-square"></a>
-                <a href="#" class="fa-brands fa-instagram-square"></a>
-                <a href="#" class="fa-brands fa-youtube-square"></a>
+                <a href="https://www.facebook.com/tiendita" target="_blank" class="fa-brands fa-facebook-square"></a>
+                <a href="https://twitter.com/tiendita" target="_blank" class="fa-brands fa-twitter-square"></a>
+                <a href="https://www.instagram.com/tiendita/" target="_blank" class="fa-brands fa-instagram-square"></a>
+                <a href="https://www.youtube.com/tiendita" target="_blank" class="fa-brands fa-youtube-square"></a>
             </div>
         </div>
 
